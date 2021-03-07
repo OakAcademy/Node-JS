@@ -11,8 +11,12 @@ input[type="text"]{
     font-size: 21px;
 }
 
+form {
+    text-align: center;
+}
+
 button{
-    padding: 21px;
+    padding: 16px;
     background: green;
     color: #fff;
     cursor: pointer;
@@ -21,6 +25,7 @@ button{
 
 ul{
     list-style-type: none;
+    text-align: center;
 }
 
 li{
