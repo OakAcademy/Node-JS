@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body {
+            background-color: aliceblue;
+            padding: 27px;
+            font-size: 21px;
+            text-align: center;
+        }
+        li { margin: auto; width: fit-content; }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <%- include('partials/nav.ejs') %>
+    <h1>Profile <%= person %> </h1>
+    <h1>Age <%= data.age %> </h1>
+    <h1>Job <%= data.job %> </h1>
+
+    <h2>Friends</h2>
+    <ul>
+        <% data.friends.forEach((item) => { %>
+            <li><%= item %></li>
+        <% }) %>
+    </ul>
+</body>
+</html>

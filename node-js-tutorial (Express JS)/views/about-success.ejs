@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body {
+            background-color: aliceblue;
+            padding: 27px;
+            font-size: 21px;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            align-self: center;
+            margin: auto;
+        }
+
+        input {
+            margin: 8px 0;
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is all about me!</h1>
+    <p> This blog is about <%= data.name %> </p>
+    <p> He is a <%= data.job %> </p>
+    <p> Contact <%= data.email %> </p>
+
+</body>
+</html>
